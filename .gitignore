@@ -4,6 +4,7 @@ application/cache/*
 application/config/*
 !application/config/config.php
 !application/config/autoload.php
+!application/config/ion_auth.php
 !application/config/routes.php
 !application/cache/index.html
 
