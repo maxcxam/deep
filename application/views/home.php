@@ -26,7 +26,7 @@
                <hr>
 
                <!-- Post Content -->
-               <?=$post['post']?>
+               <?=word_limiter($post['post'],10,'<a href="#">***</a>')?>
 
            <?php } ?>
             <hr>
