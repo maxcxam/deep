@@ -21,7 +21,7 @@
                <hr>
 
                <!-- Preview Image -->
-               <img class="img-fluid rounded" src="http://placehold.it/900x300" alt="">
+               <img class="img-fluid rounded" src="<?=(empty($post['logo']))?'http://placehold.it/900x300':'/assets/img/posts/'.$post['logo']?>" alt="">
 
                <hr>
 
