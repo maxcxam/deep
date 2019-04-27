@@ -23,7 +23,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = '';
+$config['base_url'] = (getenv('HTTP_HOST')=='deep.lo')?'http://deep.lo':'deep.leoceramika.tk';
 
 /*
 |--------------------------------------------------------------------------
