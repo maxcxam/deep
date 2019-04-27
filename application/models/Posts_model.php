@@ -13,6 +13,6 @@ class Posts_model extends CI_Model
     {
         $this->db->select('p.*, concat(u.first_name, " ", u.last_name) as user');
         $this->db->join('users u', 'u.id=p.author', 'left');
-        return $this->db->get_where('posts p', array('active'=>'1'))->result_array();
+        return $this->db->get_where('posts p', array('p.active'=>'1'))->result_array();
     }
 }
